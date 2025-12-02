@@ -1,8 +1,11 @@
-export default function BlogDetailsPage(){
+export default async function BlogDetailsPage({params}){
+
+    const {id} = await params;
+
 
     return(
         <div>
-            this is blog details page
+           <h1>Blog Details Page: {id}</h1>
         </div>
     )
 }
